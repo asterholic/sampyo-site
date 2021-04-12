@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+header{
+    position: relative;
+    height: 89px;
+    background-color: #b9b9b9;
+}
+
+header .logo{
+    position: absolute;
+    width: 140px;
+    background-image: url(../images/sp-header-logo.gif);
+    z-index: 500;
+}
+header .logo>a{
+    display: block;
+    height: 109px;
+    text-indent: -9999px;
+}
+
+header .snb{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 35px;
+}
+
+header .snb>.innerwrap,
+header nav>.innerwrap{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+header .snb .lang{
+    width: 82px;
+    margin-right: 5px;
+    background-image: url(../images/sp-snb-lang_btn.gif);
+}
+
+header .snb .contact{
+    width: 100px;
+    background-image: url(../images/sp-snb-contact_btn.gif);
+}
+
+header .snb .lang>a,
+header .snb .contact>a{
+    display: block;
+    height: 25px;
+    text-indent: -9999px;
+}
+
+header>nav{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 54px;
+    background-color: #009ddf;
+}
+
+header>nav .gnb{
+    display: flex;
+    position: absolute;
+    right: 0;
+    width: 800px;
+    height: 100%;
+}
+
+header>nav .gnb>li{
+    border-right: 1px solid #2fbfef;
+}
+
+header>nav .gnb>li:nth-child(1){width: 159px;}
+header>nav .gnb>li:nth-child(2){width: 147px;}
+header>nav .gnb>li:nth-child(3){width: 181px;}
+header>nav .gnb>li:nth-child(4){width: 150px;}
+header>nav .gnb>li:nth-child(5){width: 158px;}
+
+header>nav .gnb>li>a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 54px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 54px;
+    text-align: center;
+}
+
+header>nav .gnb>li:hover>a{
+    color: #222;
+    background-color: #fff;
+}
+
+header>nav .gnb>li>a>.bar{
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    text-indent: -9999px;
+    background-color: #009ddf;
+}
+
+header>nav .gnb>li>.sub{
+    display: none;
+    position: absolute;
+    left: 0;
+    height: 45px;
+}
+
+header>nav .gnb>li:nth-child(1)>.sub{left: 35px;}
+header>nav .gnb>li:nth-child(2)>.sub{left: 35px;}
+header>nav .gnb>li:nth-child(3)>.sub{left: 300px;}
+header>nav .gnb>li:nth-child(4)>.sub{left: 350px;}
+header>nav .gnb>li:nth-child(5)>.sub{left: 408px;}
+
+header>nav .gnb>li>.sub>li{
+    float: left;
+}
+
+header>nav .gnb>li>.sub>li>a{
+    display: block;
+    height: 45px;
+    padding: 0 13px 0 13px;
+    color: #8e8e8e;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 45px;
+}
+
+header>nav .gnb>li>.sub>li:hover>a{
+    color: #222;
+}

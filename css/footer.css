@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+#sitemap{
+    overflow: hidden;
+    width: 100%;
+    /* height: 430px; */
+    height: 0;
+    margin-top: 55px;
+    background-color: #f7f7f7;
+    border-top: 5px solid #6a6a6a;
+}
+
+#sitemap .gnb{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+#sitemap .gnb>li{
+    width: 20%;
+    height: 405px;
+    padding: 0 25px 0 25px;
+    border-left: 1px solid #e6e6e6;
+}
+
+#sitemap .gnb>li:last-child{border-right: 1px solid #e6e6e6;}
+
+#sitemap .gnb>li>span{
+    font-weight: 600;
+    font-size: 13px;
+}
+
+#sitemap .gnb>li>.sub{
+    margin-top: 15px;
+}
+
+#sitemap .gnb>li>.sub>li{
+    margin-top: 5px;
+    font-weight: 300;
+    border-bottom: 1px solid #ededed;
+}
+
+#sitemap .gnb>li>.sub>li>a{
+    display: block;
+    height: 20px;
+}
+
+#sitemap .gnb>li>.sub>li>.depth>li{
+    height: 25px;
+    margin-left: 12px;
+}
+
+#sitemap .gnb>li>.sub>li>.depth>li>a{
+    display: block;
+}
+
+footer{
+    width: 100%;
+    height: 89px;
+    background-color: #b9b9b9;
+}
+
+footer>.innerwrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 89px;
+}
+
+footer address{
+    line-height: 1.5;
+}
+
+footer address>span{
+    display: block;
+}
+
+footer address>.address{
+    color: #fff;
+    font-size: 11px;
+}
+footer address>.copyright{
+    color: #dedede;
+    font-size: 10px;
+}
+
+footer .options{
+    display: flex;
+}
+
+footer .options>p,
+footer .options>div{
+    margin-right: 6px;
+}
+
+footer .options>.privacy{
+    width: 103px;
+    background-image: url(../images/sp-footer-privacy_btn.gif);
+    background-repeat: no-repeat;
+}
+
+footer .options>.email{
+    width: 139px;
+    background-image: url(../images/sp-footer-email_btn.gif);
+    background-repeat: no-repeat;
+}
+
+footer .options>.familysite{
+    position: relative;
+    width: 98px;
+    background-image: url(../images/sp-footer-familysite_btn.png);
+    background-repeat: no-repeat;
+}
+
+footer .options>.familysite-list{
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    right: 166px;
+    bottom: 60px;
+    width: 92px;
+    height: 0;
+    background-color: #fff;
+    border: 1px solid #009de0;
+    border-radius: 10px;
+}
+
+footer .options>.familysite-list>ul>li{
+    font-size: 11px;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+footer .options>.familysite-list>ul>li>a{color: #009de0;}
+
+footer .options>.familysite-list>ul>li:hover>a{color: #222;}
+
+footer .options>.sitemap{
+    width: 98px;
+    background-image: url(../images/sp-footer-sitemap_btn.png);
+    background-repeat: no-repeat;
+}
+
+footer .options>.sitemap.on{
+    background-image: url(../images/sp-footer-sitemap-close_btn.png);
+}
+
+footer .options>.top{
+    width: 53px;
+    background-image: url(../images/sp-footer-top_btn.gif);
+    background-repeat: no-repeat;
+}
+
+footer .options>.privacy>a,
+footer .options>.email>a,
+footer .options>.familysite>a,
+footer .options>.sitemap>a,
+footer .options>.top>a{
+    display: block;
+    height: 28px;
+    text-indent: -9999px;
+}
+
+footer .options>.top>a{margin-right: 0;}
